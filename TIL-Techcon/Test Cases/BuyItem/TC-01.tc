@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-01</name>
+   <tag>Buy,Buy With Invalid Item</tag>
+   <comment></comment>
+   <testCaseGuid>a9f1206b-6f9d-44f9-82a2-39e1fb9a2ae3</testCaseGuid>
+</TestCaseEntity>

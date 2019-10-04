@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="Demo" time="0" tests="6" failures="0" errors="0">
+    <testsuite name="Demo" tests="6" failures="0" errors="0" time="0" timestamp="2019-08-06 14:05:23" hostname="minhhoang - 192.168.122.82" id="Test Suites/Demo">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="/Users/minhhoang/Katalon Studio/TIL-Techcon/Reports/Demo/20190806_140520"/>
+            <property name="logFiles" value="/Users/minhhoang/Katalon Studio/TIL-Techcon/Reports/Demo/20190806_140520/execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="minhhoang - 192.168.122.82"/>
+            <property name="hostAddress" value="192.168.122.82"/>
+            <property name="os" value="Mac OS X 64bit"/>
+            <property name="katalonVersion" value="6.2.2.4"/>
+        </properties>
+        <testcase name="Test Cases/Authenticate/TC-02" classname="Test Cases/Authenticate/TC-02" status="PASSED">
+            <system-out>2019-08-06 14:05:24 - [TEST_CASE][PASSED] - Test Cases/Authenticate/TC-02: Test Cases/Authenticate/TC-02
+
+2019-08-06 14:05:24 - [TEST_STEP][PASSED] - println("Authenticate TC-02"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/Authenticate/TC-01" classname="Test Cases/Authenticate/TC-01" status="PASSED">
+            <system-out>2019-08-06 14:05:24 - [TEST_CASE][PASSED] - Test Cases/Authenticate/TC-01: Test Cases/Authenticate/TC-01
+
+2019-08-06 14:05:24 - [TEST_STEP][PASSED] - println("Authenticate TC-01"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/Register/TC-02" classname="Test Cases/Register/TC-02" status="PASSED">
+            <system-out>2019-08-06 14:05:24 - [TEST_CASE][PASSED] - Test Cases/Register/TC-02: Test Cases/Register/TC-02
+
+2019-08-06 14:05:24 - [TEST_STEP][PASSED] - println("Register TC-02"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/Register/TC-01" classname="Test Cases/Register/TC-01" status="PASSED">
+            <system-out>2019-08-06 14:05:24 - [TEST_CASE][PASSED] - Test Cases/Register/TC-01: Test Cases/Register/TC-01
+
+2019-08-06 14:05:24 - [TEST_STEP][PASSED] - println("Register TC-01"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/BuyItem/TC-02" classname="Test Cases/BuyItem/TC-02" status="PASSED">
+            <system-out>2019-08-06 14:05:24 - [TEST_CASE][PASSED] - Test Cases/BuyItem/TC-02: Test Cases/BuyItem/TC-02
+
+2019-08-06 14:05:24 - [TEST_STEP][PASSED] - println("Buy Item Workflow TC-02"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/BuyItem/TC-01" classname="Test Cases/BuyItem/TC-01" status="PASSED">
+            <system-out>2019-08-06 14:05:24 - [TEST_CASE][PASSED] - Test Cases/BuyItem/TC-01: Test Cases/BuyItem/TC-01
+
+2019-08-06 14:05:24 - [TEST_STEP][PASSED] - println("Buy Item Workflow TC-01"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-08-06 14:05:23 - [TEST_SUITE][INCOMPLETE] - Demo: null</system-out>
+        <system-err>2019-08-06 14:05:23 - [TEST_SUITE][INCOMPLETE] - Demo: null</system-err>
+    </testsuite>
+</testsuites>

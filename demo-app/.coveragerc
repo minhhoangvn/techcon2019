@@ -1,0 +1,6 @@
+[run]
+branch = True
+cover_pylib = False
+source = app
+[html]
+directory = htmlcov

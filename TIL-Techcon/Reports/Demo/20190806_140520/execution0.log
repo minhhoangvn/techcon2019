@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-08-06T14:05:23</date>
+  <millis>1565075123630</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Demo</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">Demo</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/Demo</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:23</date>
+  <millis>1565075123708</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = minhhoang - 192.168.122.82</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">minhhoang - 192.168.122.82</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:23</date>
+  <millis>1565075123714</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Mac OS X 64bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Mac OS X 64bit</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:23</date>
+  <millis>1565075123714</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 192.168.122.82</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">192.168.122.82</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:23</date>
+  <millis>1565075123716</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 6.2.2.4</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">6.2.2.4</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124077</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Authenticate/TC-02</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Authenticate/TC-02</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Authenticate/TC-02</property>
+  <property name="source">\\Users\\minhhoang\\Katalon Studio\\TIL-Techcon\\Test Cases\\Authenticate\\TC-02.tc</property>
+  <property name="tag">Authenticate,Register,Authenticate With Gmail</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124193</millis>
+  <sequence>7</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(\&amp;quot;Authenticate TC-02\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">2</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124199</millis>
+  <sequence>8</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(\&amp;quot;Authenticate TC-02\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124199</millis>
+  <sequence>9</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Authenticate/TC-02</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124200</millis>
+  <sequence>10</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Authenticate/TC-02</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124206</millis>
+  <sequence>11</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Authenticate/TC-01</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Authenticate/TC-01</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Authenticate/TC-01</property>
+  <property name="source">\\Users\\minhhoang\\Katalon Studio\\TIL-Techcon\\Test Cases\\Authenticate\\TC-01.tc</property>
+  <property name="tag">Authenticate,Register,Authenticate Require SSO</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124219</millis>
+  <sequence>13</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(\&amp;quot;Authenticate TC-01\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">2</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124224</millis>
+  <sequence>14</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(\&amp;quot;Authenticate TC-01\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124224</millis>
+  <sequence>15</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Authenticate/TC-01</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124225</millis>
+  <sequence>16</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Authenticate/TC-01</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124229</millis>
+  <sequence>17</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Register/TC-02</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Register/TC-02</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Register/TC-02</property>
+  <property name="source">\\Users\\minhhoang\\Katalon Studio\\TIL-Techcon\\Test Cases\\Register\\TC-02.tc</property>
+  <property name="tag">Authenticate,Register,Register With SSO</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124239</millis>
+  <sequence>19</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(\&amp;quot;Register TC-02\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">2</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124240</millis>
+  <sequence>20</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(\&amp;quot;Register TC-02\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124240</millis>
+  <sequence>21</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Register/TC-02</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124241</millis>
+  <sequence>22</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Register/TC-02</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124244</millis>
+  <sequence>23</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Register/TC-01</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Register/TC-01</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Register/TC-01</property>
+  <property name="source">\\Users\\minhhoang\\Katalon Studio\\TIL-Techcon\\Test Cases\\Register\\TC-01.tc</property>
+  <property name="tag">Authenticate,Register,Register With Gmail</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124255</millis>
+  <sequence>25</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(\&amp;quot;Register TC-01\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">2</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124257</millis>
+  <sequence>26</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(\&amp;quot;Register TC-01\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124257</millis>
+  <sequence>27</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Register/TC-01</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124258</millis>
+  <sequence>28</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Register/TC-01</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124262</millis>
+  <sequence>29</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/BuyItem/TC-02</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/BuyItem/TC-02</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/BuyItem/TC-02</property>
+  <property name="source">\\Users\\minhhoang\\Katalon Studio\\TIL-Techcon\\Test Cases\\BuyItem\\TC-02.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124274</millis>
+  <sequence>31</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(\&amp;quot;Buy Item Workflow TC-02\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">3</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124274</millis>
+  <sequence>32</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(\&amp;quot;Buy Item Workflow TC-02\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124276</millis>
+  <sequence>33</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/BuyItem/TC-02</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124276</millis>
+  <sequence>34</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/BuyItem/TC-02</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124328</millis>
+  <sequence>35</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/BuyItem/TC-01</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/BuyItem/TC-01</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/BuyItem/TC-01</property>
+  <property name="source">\\Users\\minhhoang\\Katalon Studio\\TIL-Techcon\\Test Cases\\BuyItem\\TC-01.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124350</millis>
+  <sequence>37</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(\&amp;quot;Buy Item Workflow TC-01\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">2</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124350</millis>
+  <sequence>38</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(\&amp;quot;Buy Item Workflow TC-01\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124350</millis>
+  <sequence>39</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/BuyItem/TC-01</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124351</millis>
+  <sequence>40</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/BuyItem/TC-01</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124351</millis>
+  <sequence>41</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start listener action : exportKatalonReports</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124588</millis>
+  <sequence>115</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Start generating HTML report folder at: /Users/minhhoang/Katalon Studio/TIL-Techcon/Reports/Demo/20190806_140520...</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124608</millis>
+  <sequence>116</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>HTML report generated</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124609</millis>
+  <sequence>117</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Start generating CSV report folder at: /Users/minhhoang/Katalon Studio/TIL-Techcon/Reports/Demo/20190806_140520...</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124624</millis>
+  <sequence>118</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>CSV report generated</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124625</millis>
+  <sequence>119</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Start generating JUnit report folder at: /Users/minhhoang/Katalon Studio/TIL-Techcon/Reports/Demo/20190806_140520...</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124930</millis>
+  <sequence>120</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>JUnit report generated</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124932</millis>
+  <sequence>122</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End listener action : exportKatalonReports</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-08-06T14:05:24</date>
+  <millis>1565075124995</millis>
+  <sequence>123</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endSuite</method>
+  <thread>1</thread>
+  <message>End Test Suite : Test Suites/Demo</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+</log>
