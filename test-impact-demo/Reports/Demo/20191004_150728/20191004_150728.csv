@@ -1,0 +1,34 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Demo,,,,2019-10-04 15:07:32,2019-10-04 15:07:33,1.021s,INCOMPLETE
+,,,,,,,
+Test Cases/Authenticate/TC-02,,,"Authenticate,Register,Authenticate With Gmail",2019-10-04 15:07:32,2019-10-04 15:07:32,0.147s,PASSED
+"println(""Authenticate TC-02"")",,,,2019-10-04 15:07:32,2019-10-04 15:07:32,0.004s,PASSED
+"println(""Authenticate,Register,Authenticate With Gmail"")",,,,2019-10-04 15:07:32,2019-10-04 15:07:32,0.002s,PASSED
+,,,,,,,
+Test Cases/Authenticate/TC-01,,,"Authenticate,Register,Authenticate Require SSO",2019-10-04 15:07:32,2019-10-04 15:07:32,0.055s,PASSED
+"println(""Authenticate TC-01"")",,,,2019-10-04 15:07:32,2019-10-04 15:07:32,0.003s,PASSED
+"println(""Authenticate,Register,Authenticate Require SSO"")",,,,2019-10-04 15:07:32,2019-10-04 15:07:32,0.001s,PASSED
+,,,,,,,
+Test Cases/SearchItem/TC-02,,,"Search,Search WIth Valid Item",2019-10-04 15:07:32,2019-10-04 15:07:32,0.032s,PASSED
+"println(""SearchItem TC-02"")",,,,2019-10-04 15:07:32,2019-10-04 15:07:32,0.002s,PASSED
+"println(""Search,Search WIth Valid Item"")",,,,2019-10-04 15:07:32,2019-10-04 15:07:32,0.001s,PASSED
+,,,,,,,
+Test Cases/SearchItem/TC-01,,,"Search,Search WIth Invalid Item",2019-10-04 15:07:32,2019-10-04 15:07:32,0.019s,PASSED
+"println(""SearchItem TC-01"")",,,,2019-10-04 15:07:32,2019-10-04 15:07:32,0.001s,PASSED
+"println(""Search,Search WIth Invalid Item"")",,,,2019-10-04 15:07:32,2019-10-04 15:07:32,0.002s,PASSED
+,,,,,,,
+Test Cases/Register/TC-02,,,"Authenticate,Register,Register With SSO",2019-10-04 15:07:32,2019-10-04 15:07:33,0.069s,PASSED
+"println(""Register TC-02"")",,,,2019-10-04 15:07:32,2019-10-04 15:07:33,0.013s,PASSED
+"println(""Authenticate,Register,Register With SSO"")",,,,2019-10-04 15:07:33,2019-10-04 15:07:33,0.001s,PASSED
+,,,,,,,
+Test Cases/Register/TC-01,,,"Authenticate,Register,Register With Gmail",2019-10-04 15:07:33,2019-10-04 15:07:33,0.018s,PASSED
+"println(""Register TC-01"")",,,,2019-10-04 15:07:33,2019-10-04 15:07:33,0.001s,PASSED
+"println(""Authenticate,Register,Register With Gmail"")",,,,2019-10-04 15:07:33,2019-10-04 15:07:33,0.001s,PASSED
+,,,,,,,
+Test Cases/BuyItem/TC-02,,,"Buy,Buy With Valid Item",2019-10-04 15:07:33,2019-10-04 15:07:33,0.022s,PASSED
+"println(""Buy Item Workflow TC-02"")",,,,2019-10-04 15:07:33,2019-10-04 15:07:33,0.000s,PASSED
+"println(""Buy,Buy With Valid Item"")",,,,2019-10-04 15:07:33,2019-10-04 15:07:33,0.001s,PASSED
+,,,,,,,
+Test Cases/BuyItem/TC-01,,,"Buy,Buy With Invalid Item",2019-10-04 15:07:33,2019-10-04 15:07:33,0.034s,PASSED
+"println(""Buy Item Workflow TC-01"")",,,,2019-10-04 15:07:33,2019-10-04 15:07:33,0.002s,PASSED
+"println(""Buy,Buy With Invalid Item"")",,,,2019-10-04 15:07:33,2019-10-04 15:07:33,0.018s,PASSED

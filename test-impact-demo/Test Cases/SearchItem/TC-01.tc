@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-01</name>
+   <tag>Search,Search WIth Invalid Item</tag>
+   <comment></comment>
+   <testCaseGuid>dfcffbb5-0728-4fc1-85b5-70a83e821d76</testCaseGuid>
+</TestCaseEntity>

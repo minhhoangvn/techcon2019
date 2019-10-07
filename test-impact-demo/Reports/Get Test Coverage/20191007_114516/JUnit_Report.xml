@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="Get Test Coverage" time="16" tests="2" failures="0" errors="0">
+    <testsuite name="Get Test Coverage" tests="2" failures="0" errors="0" time="16" timestamp="2019-10-07 11:45:19" hostname="minhhoang - 192.168.63.21" id="Test Suites/Get Test Coverage">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="/Users/minhhoang/Desktop/techcon2019/test-impact-demo/Reports/Get Test Coverage/20191007_114516"/>
+            <property name="logFiles" value="/Users/minhhoang/Desktop/techcon2019/test-impact-demo/Reports/Get Test Coverage/20191007_114516/execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="minhhoang - 192.168.63.21"/>
+            <property name="hostAddress" value="192.168.63.21"/>
+            <property name="os" value="Mac OS X 64bit"/>
+            <property name="katalonVersion" value="6.2.2.4"/>
+        </properties>
+        <testcase name="Test Cases/Authenticate/TC-02" classname="Test Cases/Authenticate/TC-02" status="PASSED">
+            <system-out>2019-10-07 11:45:20 - [TEST_CASE][PASSED] - Test Cases/Authenticate/TC-02: Test Cases/Authenticate/TC-02
+
+2019-10-07 11:45:20 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-10-07 11:45:20 - [TEST_STEP][PASSED] - if (isCoverageTestSuite()): null
+
+2019-10-07 11:45:20 - [TEST_STEP][PASSED] - return testSuiteName.toString().equalsIgnoreCase(COVERAGE_SUITE_NAME): null
+
+2019-10-07 11:45:20 - [TEST_STEP][PASSED] - applicationProcess = join(" ").execute(): null
+
+2019-10-07 11:45:20 - [TEST_STEP][PASSED] - delayForApplicationStart(): null
+
+2019-10-07 11:45:20 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - applicationProcess.consumeProcessOutputStream(outStream): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - println("Authenticate TC-02"): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - println("Authenticate,Register,Authenticate With Gmail"): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - if (isCoverageTestSuite()): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - return testSuiteName.toString().equalsIgnoreCase(COVERAGE_SUITE_NAME): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - testCaseId = replaceAll("/", "_").replaceAll("\W", "_"): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - println(testCaseId): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - join(" ").execute(): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - generateCoverageCommand.add("./xmlcov/" + testCaseId + ".xml"): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - join(" ").execute(): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/Authenticate/TC-01" classname="Test Cases/Authenticate/TC-01" status="PASSED">
+            <system-out>2019-10-07 11:45:25 - [TEST_CASE][PASSED] - Test Cases/Authenticate/TC-01: Test Cases/Authenticate/TC-01
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - if (isCoverageTestSuite()): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - return testSuiteName.toString().equalsIgnoreCase(COVERAGE_SUITE_NAME): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - applicationProcess = join(" ").execute(): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - delayForApplicationStart(): null
+
+2019-10-07 11:45:25 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-10-07 11:45:30 - [TEST_STEP][PASSED] - applicationProcess.consumeProcessOutputStream(outStream): null
+
+2019-10-07 11:45:30 - [TEST_STEP][PASSED] - println("Authenticate TC-01"): null
+
+2019-10-07 11:45:30 - [TEST_STEP][PASSED] - println("Authenticate,Register,Authenticate Require SSO"): null
+
+2019-10-07 11:45:30 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-07 11:45:35 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-07 11:45:35 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null
+
+2019-10-07 11:45:35 - [TEST_STEP][PASSED] - if (isCoverageTestSuite()): null
+
+2019-10-07 11:45:35 - [TEST_STEP][PASSED] - return testSuiteName.toString().equalsIgnoreCase(COVERAGE_SUITE_NAME): null
+
+2019-10-07 11:45:35 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+2019-10-07 11:45:35 - [TEST_STEP][PASSED] - testCaseId = replaceAll("/", "_").replaceAll("\W", "_"): null
+
+2019-10-07 11:45:35 - [TEST_STEP][PASSED] - println(testCaseId): null
+
+2019-10-07 11:45:35 - [TEST_STEP][PASSED] - join(" ").execute(): null
+
+2019-10-07 11:45:35 - [TEST_STEP][PASSED] - generateCoverageCommand.add("./xmlcov/" + testCaseId + ".xml"): null
+
+2019-10-07 11:45:35 - [TEST_STEP][PASSED] - join(" ").execute(): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-10-07 11:45:19 - [TEST_SUITE][INCOMPLETE] - Get Test Coverage: null</system-out>
+        <system-err>2019-10-07 11:45:19 - [TEST_SUITE][INCOMPLETE] - Get Test Coverage: null</system-err>
+    </testsuite>
+</testsuites>

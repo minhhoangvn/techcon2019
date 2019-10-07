@@ -1,0 +1,50 @@
+{
+  "X19pbml0X18ucHkxNTcwMzUwNDUyLjM0NDkxOA==": {
+    "file_name": "__init__.py",
+    "impact_lines": [
+      "1-7"
+    ],
+    "impact_methods": []
+  },
+  "dXRpbHMucHkxNTcwMzUwNDUyLjM0NTU3OA==": {
+    "file_name": "utils/utils.py",
+    "impact_lines": [
+      "1-7",
+      "11-11",
+      "15-15",
+      "19-19"
+    ],
+    "impact_methods": [
+      "get_cpu_info()",
+      "get_virtual_memory_info()",
+      "get_net_info()",
+      "get_boot_time_info()"
+    ]
+  },
+  "Y2FsY3VsYXRlLnB5MTU3MDM1MDQ1Mi4zNDU4MjE5": {
+    "file_name": "view/calculate.py",
+    "impact_lines": [
+      "1-5"
+    ],
+    "impact_methods": [
+      "calculate_process()"
+    ]
+  },
+  "cHJvY2Vzc2luZm8ucHkxNTcwMzUwNDUyLjM0NjEyMg==": {
+    "file_name": "view/processinfo.py",
+    "impact_lines": [
+      "1-9",
+      "13-13",
+      "24-24",
+      "28-33",
+      "62-62"
+    ],
+    "impact_methods": [
+      "index()",
+      "info()",
+      "monitor()",
+      "api_monitor()",
+      "api_process()"
+    ]
+  }
+}

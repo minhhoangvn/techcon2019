@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="Get Test Coverage" time="16" tests="1" failures="0" errors="0">
+    <testsuite name="Get Test Coverage" tests="1" failures="0" errors="0" time="16" timestamp="2019-10-07 14:33:05" hostname="minhhoang - 192.168.63.21" id="Test Suites/Get Test Coverage">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="/Users/minhhoang/Desktop/techcon2019/test-impact-demo/Reports/Get Test Coverage/20191007_143301"/>
+            <property name="logFiles" value="/Users/minhhoang/Desktop/techcon2019/test-impact-demo/Reports/Get Test Coverage/20191007_143301/execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="minhhoang - 192.168.63.21"/>
+            <property name="os" value="Mac OS X 64bit"/>
+            <property name="katalonVersion" value="6.2.2.4"/>
+            <property name="browser" value="Chrome 77.0.3865.90"/>
+            <property name="hostAddress" value="192.168.63.21"/>
+            <property name="sessionId" value="c920460f6a7bb7f06c56dae07558a2dd"/>
+            <property name="seleniumVersion" value="3.141.59"/>
+            <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+            <property name="platform" value="Mac OS X"/>
+        </properties>
+        <testcase name="Test Cases/TIL/TC-01" classname="Test Cases/TIL/TC-01" status="PASSED">
+            <system-out>2019-10-07 14:33:05 - [TEST_CASE][PASSED] - Test Cases/TIL/TC-01: Test Cases/TIL/TC-01
+
+2019-10-07 14:33:05 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-10-07 14:33:05 - [TEST_STEP][PASSED] - if (isCoverageTestSuite()): null
+
+2019-10-07 14:33:05 - [TEST_STEP][PASSED] - return testSuiteName.toString().equalsIgnoreCase(COVERAGE_SUITE_NAME): null
+
+2019-10-07 14:33:05 - [TEST_STEP][PASSED] - applicationProcess = join(" ").execute(): null
+
+2019-10-07 14:33:05 - [TEST_STEP][PASSED] - delayForBackgroundProcess(3000): null
+
+2019-10-07 14:33:05 - [TEST_STEP][PASSED] - Thread.sleep(time): null
+
+2019-10-07 14:33:08 - [TEST_STEP][PASSED] - applicationProcess.consumeProcessOutputStream(outStream): null
+
+2019-10-07 14:33:08 - [TEST_STEP][PASSED] - Start setup action : setUp: Method 'setUp' complete successfully
+
+2019-10-07 14:33:09 - [TEST_STEP][PASSED] - openBrowser("http://www.google.com"): Browser is opened with url: 'http://www.google.com'
+
+2019-10-07 14:33:09 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-10-07 14:33:09 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-10-07 14:33:14 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.google.com'
+
+2019-10-07 14:33:14 - [MESSAGE][PASSED] - Method 'setUp' complete successfully
+
+2019-10-07 14:33:14 - [TEST_STEP][PASSED] - navigateToUrl("http://localhost:5000"): Navigate to 'http://localhost:5000' successfully
+
+2019-10-07 14:33:15 - [MESSAGE][PASSED] - Navigate to 'http://localhost:5000' successfully
+
+2019-10-07 14:33:15 - [TEST_STEP][PASSED] - navigateToUrl("http://localhost:5000/calculate"): Navigate to 'http://localhost:5000/calculate' successfully
+
+2019-10-07 14:33:16 - [MESSAGE][PASSED] - Navigate to 'http://localhost:5000/calculate' successfully
+
+2019-10-07 14:33:16 - [TEST_STEP][PASSED] - navigateToUrl("http://localhost:5000/info"): Navigate to 'http://localhost:5000/info' successfully
+
+2019-10-07 14:33:17 - [MESSAGE][PASSED] - Navigate to 'http://localhost:5000/info' successfully
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - Start tear down : tearDown: Method 'tearDown' complete successfully
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-10-07 14:33:17 - [MESSAGE][PASSED] - Browser is closed
+
+2019-10-07 14:33:17 - [MESSAGE][PASSED] - Method 'tearDown' complete successfully
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - if (isCoverageTestSuite()): null
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - return testSuiteName.toString().equalsIgnoreCase(COVERAGE_SUITE_NAME): null
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - testCaseId = replaceAll("/", "_").replaceAll("\W", "_"): null
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - join(" ").execute(): null
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - generateCoverageCommand.add("./xmlcov/" + testCaseId + ".xml"): null
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - delayForBackgroundProcess(3000): null
+
+2019-10-07 14:33:17 - [TEST_STEP][PASSED] - Thread.sleep(time): null
+
+2019-10-07 14:33:20 - [TEST_STEP][PASSED] - p = join(" ").execute(): null
+
+2019-10-07 14:33:20 - [TEST_STEP][PASSED] - delayForBackgroundProcess(1000): null
+
+2019-10-07 14:33:20 - [TEST_STEP][PASSED] - Thread.sleep(time): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-10-07 14:33:05 - [TEST_SUITE][INCOMPLETE] - Get Test Coverage: null</system-out>
+        <system-err>2019-10-07 14:33:05 - [TEST_SUITE][INCOMPLETE] - Get Test Coverage: null</system-err>
+    </testsuite>
+</testsuites>

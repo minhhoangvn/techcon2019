@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Get Test Coverage,,,,2019-10-07 11:39:05,2019-10-07 11:39:11,5.953s,INCOMPLETE
+,,,,,,,
+Test Cases/Authenticate/TC-02,,,"Authenticate,Register,Authenticate With Gmail",2019-10-07 11:39:06,2019-10-07 11:39:06,0.038s,PASSED
+Start listener action : sampleBeforeTestCase,,,,2019-10-07 11:39:06,2019-10-07 11:39:06,0.002s,PASSED
+"println(""Authenticate TC-02"")",,,,2019-10-07 11:39:06,2019-10-07 11:39:06,0.002s,PASSED
+"println(""Authenticate,Register,Authenticate With Gmail"")",,,,2019-10-07 11:39:06,2019-10-07 11:39:06,0.000s,PASSED
+Start listener action : sampleAfterTestCase,,,,2019-10-07 11:39:06,2019-10-07 11:39:06,0.003s,PASSED
+,,,,,,,
+Test Cases/Authenticate/TC-01,,,"Authenticate,Register,Authenticate Require SSO",2019-10-07 11:39:06,2019-10-07 11:39:11,5.356s,PASSED
+Start listener action : sampleBeforeTestCase,,,,2019-10-07 11:39:06,2019-10-07 11:39:06,0.001s,PASSED
+"println(""Authenticate TC-01"")",,,,2019-10-07 11:39:06,2019-10-07 11:39:06,0.001s,PASSED
+"println(""Authenticate,Register,Authenticate Require SSO"")",,,,2019-10-07 11:39:06,2019-10-07 11:39:06,0.004s,PASSED
+delay(5),,,,2019-10-07 11:39:06,2019-10-07 11:39:11,5.186s,PASSED
+Start listener action : sampleAfterTestCase,,,,2019-10-07 11:39:11,2019-10-07 11:39:11,0.002s,PASSED

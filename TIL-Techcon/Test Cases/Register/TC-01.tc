@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC-01</name>
-   <tag>Authenticate,Register,Register With Gmail</tag>
-   <comment></comment>
-   <testCaseGuid>22ea940a-cfbf-4a7c-a802-d79a14eb114e</testCaseGuid>
-</TestCaseEntity>

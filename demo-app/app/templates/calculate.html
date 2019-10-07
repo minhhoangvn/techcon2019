@@ -1,0 +1,62 @@
+{% extends "base.html" %} {% block content %}
+<div>
+  <legend>Calculate number:</legend>
+  First name:<br />
+  <input type="text" id="number-a" placeholder="Number A" />
+  <br />
+  <br />
+  Last name:<br />
+  <input type="text" id="number-b" placeholder="Number B" />
+  <br />
+  <br />
+  Calculate Type:<br />
+  <select id="calculate-type">
+    <option value="addition">Addition</option>
+    <option value="subtraction">Subtraction</option>
+    <option value="multiplication">Multiplication</option>
+    <option value="division">Division</option>
+  </select>
+
+  <button
+    type="submit"
+    id="calculate-button"
+    value="Calculate"
+    placeholder="Calculate"
+  >
+    Calculate
+  </button>
+</div>
+<br />
+<div>
+  <legend>Calculate Result:</legend>
+  <div>
+    <input type="text" id="calculate-number" readonly="readonly" />
+  </div>
+</div>
+<script>
+  $('#calculate-button').click(function() {
+    let calculateType = $('#calculate-type')
+      .children('option:selected')
+      .val();
+    let numberA = $('#number-a').val();
+    let numberB = $('#number-b').val();
+    $.ajax({
+      url: `/calculate/${calculateType}`,
+      type: 'POST',
+      dataType: 'json',
+      data: JSON.stringify({
+        'number-a': numberA,
+        'number-b': numberB
+      }),
+      contentType: 'application/json',
+      success: function(data) {
+        console.log(data);
+        $('#calculate-number').val(data.result);
+      },
+      error: function(request, error) {
+        console.log('API Request: ' + JSON.stringify(request));
+      }
+    });
+  });
+</script>
+{% endblock %}

@@ -1,1 +1,0 @@
-docker-compose -p saleor down

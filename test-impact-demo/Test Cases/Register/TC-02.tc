@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-02</name>
+   <tag>Authenticate,Register,Register With SSO</tag>
+   <comment></comment>
+   <testCaseGuid>e6535e16-f592-4f70-9060-5d721b0d1df6</testCaseGuid>
+</TestCaseEntity>

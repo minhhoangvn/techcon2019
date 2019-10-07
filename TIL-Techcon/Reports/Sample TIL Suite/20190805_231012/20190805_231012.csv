@@ -1,5 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-Sample TIL Suite,,,,2019-08-05 23:10:17,2019-08-05 23:10:17,0.404s,INCOMPLETE
-,,,,,,,
-Test Cases/Register/TC-02,,,"Authenticate,Register,Register With SSO",2019-08-05 23:10:17,2019-08-05 23:10:17,0.099s,PASSED
-"println(""Register TC-02"")",,,,2019-08-05 23:10:17,2019-08-05 23:10:17,0.008s,PASSED

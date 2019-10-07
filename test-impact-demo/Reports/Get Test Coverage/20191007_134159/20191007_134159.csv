@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Get Test Coverage,Chrome 77.0.3865.90,,,2019-10-07 13:42:02,2019-10-07 13:42:19,17.054s,INCOMPLETE
+,,,,,,,
+Test Cases/TIL/TC-01,Chrome 77.0.3865.90,,,2019-10-07 13:42:02,2019-10-07 13:42:19,16.752s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,,2019-10-07 13:42:02,2019-10-07 13:42:05,3.380s,PASSED
+Start setup action : setUp,Chrome 77.0.3865.90,,,2019-10-07 13:42:05,2019-10-07 13:42:10,4.930s,PASSED
+"navigateToUrl(""http://localhost:5000"")",Chrome 77.0.3865.90,,,2019-10-07 13:42:10,2019-10-07 13:42:13,2.403s,PASSED
+"navigateToUrl(""http://localhost:5000/calculate"")",Chrome 77.0.3865.90,,,2019-10-07 13:42:13,2019-10-07 13:42:13,0.188s,PASSED
+"navigateToUrl(""http://localhost:5000/info"")",Chrome 77.0.3865.90,,,2019-10-07 13:42:13,2019-10-07 13:42:14,1.500s,PASSED
+Start tear down : tearDown,Chrome 77.0.3865.90,,,2019-10-07 13:42:14,2019-10-07 13:42:15,0.250s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 77.0.3865.90,,,2019-10-07 13:42:15,2019-10-07 13:42:19,4.041s,PASSED

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC-01</name>
-   <tag>Authenticate,Register,Authenticate Require SSO</tag>
-   <comment></comment>
-   <testCaseGuid>e208bbbf-6909-4e42-8f93-641612d587f4</testCaseGuid>
-</TestCaseEntity>

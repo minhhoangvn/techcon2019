@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+    <extension
+            point="com.katalon.platform.extensions">
+        <point
+                id="kms.coe.katalon.plugin.DynamicBuilderTestSuiteImpl"
+                extensionPointId="com.katalon.platform.api.extension.dynamicQueryingTestSuiteDescription"
+                implementationClass="kms.coe.katalon.plugin.DynamicBuilderTestSuiteImpl">
+        </point>
+    </extension>
+    <extension
+            point="com.katalon.platform.extensions">
+        <point
+                id="kms.coe.katalon.plugin.PluginActivationListenerImpl"
+                extensionPointId="com.katalon.platform.api.extension.pluginActivationListener"
+                implementationClass="kms.coe.katalon.plugin.PluginActivationListenerImpl">
+        </point>
+    </extension>
+    <extension
+            point="com.katalon.platform.extensions">
+        <point
+                id="kms.coe.katalon.plugin.ExecutionEventListenerImpl"
+                extensionPointId="com.katalon.platform.api.extension.eventListener"
+                implementationClass="kms.coe.katalon.plugin.ExecutionEventListenerImpl">
+        </point>
+    </extension>
+    <extension
+            point="com.katalon.platform.extensions">
+        <point
+                id="kms.coe.katalon.plugin.reportportal.PluginToolItemDescriptionImpl"
+                extensionPointId="com.katalon.platform.api.extension.newToolItem"
+                implementationClass="kms.coe.katalon.plugin.reportportal.PluginToolItemDescriptionImpl">
+        </point>
+    </extension>
+    <extension
+         point="com.katalon.platform.extensions">
+      <point
+            id="kms.coe.katalon.plugin.reportportal.PluginPreferencePageImpl"
+            extensionPointId="com.katalon.platform.api.extension.pluginPreferencePage"
+            implementationClass="kms.coe.katalon.plugin.reportportal.PluginPreferencePageImpl">
+      </point>
+    </extension>
+    
+        <extension
+         point="com.katalon.platform.extensions">
+      <point
+            id="kms.coe.katalon.plugin.LauncherOptionParserDescriptionImpl"
+            extensionPointId="com.katalon.platform.api.extension.launcherOptionParserDescription"
+            implementationClass="kms.coe.katalon.plugin.LauncherOptionParserDescriptionImpl">
+      </point>
+    </extension>
+</plugin>
