@@ -12,12 +12,10 @@ class ApplicationManager {
 	private static StringWriter outStream = new StringWriter();
 	private static List<String> generateTestImpactMappingCommand = [
 		"/Users/minhhoang/virtualenvs/techcon2019/bin/python",
-		"/Users/minhhoang/Desktop/techcon2019/demo-app/til.py",
-		"/Users/minhhoang/Desktop/techcon2019/test-impact-demo/xmlcov"
+		"/Users/minhhoang/Desktop/techcon2019/demo-app/til.py"
 	]
 	private static List<String> startCollectCoverageCommamnd = [
-		"/Users/minhhoang/virtualenvs/techcon2019/bin/coverage" ,
-		"run" ,
+		"/Users/minhhoang/virtualenvs/techcon2019/bin/python" ,
 		"/Users/minhhoang/Desktop/techcon2019/demo-app/run.py"
 	]
 	private static List<String> stopCollectCoverageCommand = [
@@ -36,9 +34,9 @@ class ApplicationManager {
 	@BeforeTestCase
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
 		if (isCoverageTestSuite()) {
-			applicationProcess = startCollectCoverageCommamnd.join(" ").execute()
-			delayForBackgroundProcess(3000)
-			applicationProcess.consumeProcessOutputStream(outStream)
+			println "Start application coverage command"
+			startCollectCoverageCommamnd.join(" ").execute()
+			delayForBackgroundProcess(5000)
 		}
 	}
 
@@ -49,17 +47,28 @@ class ApplicationManager {
 	@AfterTestCase
 	def sampleAfterTestCase(TestCaseContext testCaseContext) {
 		if (isCoverageTestSuite()) {
+			println testCaseContext.getTestCaseId()
 			String testCaseId = testCaseContext.getTestCaseId()
 			testCaseId = testCaseId.replaceAll(" ", "_").replaceAll("/", "_").replaceAll("\\W", "_")
-			applicationProcess = stopCollectCoverageCommand.join(" ").execute()
-			applicationProcess.consumeProcessOutputStream(outStream)
-			println outStream.toString()
-			generateCoverageCommand.add('./xmlcov/'+testCaseId+".xml")
+			println "Stop coverage command"
+			stopCollectCoverageCommand.join(" ").execute()
 			delayForBackgroundProcess(3000)
-			applicationProcess = generateCoverageCommand.join(" ").execute()
-			applicationProcess.consumeProcessOutputStream(outStream)
-			delayForBackgroundProcess(1000)
 			println outStream.toString()
+			println "Generate coverage command"
+			generateCoverageCommand.add("./xmlcov/"+testCaseId+".xml")
+			println generateCoverageCommand.join(" ")
+			generateCoverageCommand.join(" ").execute()
+			delayForBackgroundProcess(3000)
+			println "Generate mapping impact coverage command"
+			generateTestImpactMappingCommand.add("/Users/minhhoang/Desktop/techcon2019/test-impact-demo/xmlcov/${testCaseId}.xml")
+			generateTestImpactMappingCommand.add("${testCaseContext.getTestCaseId().replaceAll(" ", "_")}")
+			println generateTestImpactMappingCommand.join(" ")
+			applicationProcess = generateTestImpactMappingCommand.join(" ").execute()
+			applicationProcess.consumeProcessOutputStream(outStream)
+			println (outStream.toString())
+			generateTestImpactMappingCommand.remove("${testCaseContext.getTestCaseId().replaceAll(" ", "_")}")
+			generateTestImpactMappingCommand.remove("/Users/minhhoang/Desktop/techcon2019/test-impact-demo/xmlcov/${testCaseId}.xml")
+			generateCoverageCommand.remove("./xmlcov/"+testCaseId+".xml")
 		}
 	}
 	/**
@@ -77,10 +86,6 @@ class ApplicationManager {
 	 */
 	@AfterTestSuite
 	def sampleAfterTestSuite(TestSuiteContext testSuiteContext) {
-		applicationProcess = generateTestImpactMappingCommand.join(" ").execute()
-		applicationProcess.consumeProcessOutputStream(outStream)
-		delayForBackgroundProcess(1000)
-		println outStream.toString()
 	}
 
 	def delayForBackgroundProcess(time){

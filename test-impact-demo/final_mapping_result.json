@@ -1,0 +1,56 @@
+{
+  "%Users%minhhoang%Desktop%techcon2019%demo-app%app%utils%calculate.py": {
+    "file_name": "/Users/minhhoang/Desktop/techcon2019/demo-app/app/utils/calculate.py",
+    "get_division_method(self, a, b)": {
+      "test_impact": [
+        "Test_Cases/TIL/TC-05"
+      ]
+    },
+    "__check_valid_param(self,param)": {
+      "test_impact": [
+        "Test_Cases/TIL/TC-05",
+        "Test_Cases/TIL/TC-04",
+        "Test_Cases/TIL/TC-03",
+        "Test_Cases/TIL/TC-02"
+      ]
+    },
+    "get_multiplication_method(self, a, b)": {
+      "test_impact": [
+        "Test_Cases/TIL/TC-04"
+      ]
+    },
+    "get_minus_method(self, a, b)": {
+      "test_impact": [
+        "Test_Cases/TIL/TC-03"
+      ]
+    },
+    "get_sum_method(self, a, b)": {
+      "test_impact": [
+        "Test_Cases/TIL/TC-02"
+      ]
+    }
+  },
+  "%Users%minhhoang%Desktop%techcon2019%demo-app%app%view%calculate.py": {
+    "file_name": "/Users/minhhoang/Desktop/techcon2019/demo-app/app/view/calculate.py",
+    "calculate_division_process()": {
+      "test_impact": [
+        "Test_Cases/TIL/TC-05"
+      ]
+    },
+    "calculate_multiplication_process()": {
+      "test_impact": [
+        "Test_Cases/TIL/TC-04"
+      ]
+    },
+    "calculate_subtraction_process()": {
+      "test_impact": [
+        "Test_Cases/TIL/TC-03"
+      ]
+    },
+    "calculate_addition_process()": {
+      "test_impact": [
+        "Test_Cases/TIL/TC-02"
+      ]
+    }
+  }
+}

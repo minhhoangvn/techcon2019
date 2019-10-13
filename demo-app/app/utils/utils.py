@@ -18,4 +18,5 @@ class SystemInfoUtils(object):
   
   @staticmethod
   def get_boot_time_info():
+    print("change method name")
     return datetime.datetime.fromtimestamp(psutil.boot_time()).strftime("%Y-%m-%d %H:%M:%S")

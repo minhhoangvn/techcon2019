@@ -7,21 +7,21 @@ import os
 
 source_path = os.path.join((os.path.dirname(os.path.realpath(__file__))),"app")
 
-def get_impact_test(path):
+def get_impact_test(path, test_case_file_name):
   coverage_tree = ET.parse(path)
   root = coverage_tree.getroot()
   packages_element = root.find("packages")
   class_elements = packages_element.findall("package/classes/class")
   impact_test = {}
   for class_element in class_elements:
-    get_impact_source_file(class_element, impact_test)
+    get_impact_source_file(class_element, impact_test, test_case_file_name)
   return impact_test
 
-def get_impact_source_file(class_element, impact_test):
+def get_impact_source_file(class_element, impact_test, test_case_file_name):
   class_name = class_element.attrib['name']
   source_file_token = __token_source_file(class_element.attrib['filename'])
   class_name_encode = __decode_class_name(class_name)
-  impact_test[class_name_encode]= {"file_name": class_element.attrib['filename'], "impact_lines": [], "impact_methods": []}
+  impact_test[class_name_encode]= {"file_name": class_element.attrib['filename'], "impact_lines": [], "impact_methods": [], "test_case": f"{test_case_file_name}"}
 
   impact_test[class_name_encode]['file_name'] = class_element.attrib['filename']
   current_state = 0
@@ -29,8 +29,10 @@ def get_impact_source_file(class_element, impact_test):
   end_line = 0
   for lines in class_element.find("lines").getchildren():
     method_name, (impact_loc, start_line, end_line, current_state) = get_impact_method(source_file_token, class_name_encode, lines, current_state, start_line, end_line)
-    impact_loc is not None and impact_test[class_name_encode]["impact_lines"].append(impact_loc)
-    method_name is not None and impact_test[class_name_encode]["impact_methods"].append(method_name)
+    if impact_loc is not None and impact_loc not in impact_test[class_name_encode]["impact_lines"]:
+      impact_test[class_name_encode]["impact_lines"].append(impact_loc)
+    if method_name is not None and method_name not in impact_test[class_name_encode]["impact_methods"]:
+      impact_test[class_name_encode]["impact_methods"].append(method_name)
   is_impact_latest_method = current_state is "1"
   if is_impact_latest_method:
     impact_test[class_name_encode]['impact_lines'].append(f"{start_line}-{end_line}")
@@ -62,6 +64,42 @@ def get_impact_method(source_file_token, class_name, lines, current_state, start
     if is_begin_get_impact_source_code:
       return [method_name, __begin_get_impact_source_code_handler(lines, current_state, start_line, end_line)]
     return method_name, impact_line, start_line, end_line, current_state
+
+def __merge_test_impact_files(file_path):
+  raw_data = __get_all_raw_test_impact_data(file_path)
+  impact_result = {}
+  for data in raw_data:
+    __get_impact_test_with_method_name(impact_result, data)
+  with open(os.path.join(file_path, "..", "..", "final_mapping_result.json"),"w") as impact_file:
+    impact_file.write(json.dumps(impact_result))
+
+def __get_all_raw_test_impact_data(file_path):
+  raw_data = []
+  for root, dirs, files in os.walk(file_path):
+    for file in files:
+      with open(os.path.join(root,file)) as json_file:
+        raw_data.append(json.load(json_file))
+  return raw_data
+
+def __get_impact_test_with_method_name(impact_result, data):
+  for key,value in data.items():
+    source_file_path = value['file_name']
+    impact_methods = value['impact_methods']
+    test_case = value['test_case']
+    file_name = source_file_path.replace("/","%").replace("\\","%")
+    is_new_source_code_file = file_name not in impact_result
+    if is_new_source_code_file:
+      impact_result[file_name]={"file_name": source_file_path}
+      for method in impact_methods:
+        impact_result[file_name][method]={"test_impact": [test_case]}
+    else:
+      for method in impact_methods:
+        if method not in impact_result[file_name]:
+          impact_result[file_name][method] = {"test_impact": []}
+        if test_case not in impact_result[file_name][method]['test_impact']:
+          impact_result[file_name][method]['test_impact'].append(test_case)
+        
+          
 
 def __decode_class_name(class_name):
   class_name = class_name + str(time.time())
@@ -109,9 +147,13 @@ def __begin_get_impact_source_code_handler(lines, current_state, start_line, end
 def __get_impact_method_name(lines, source_file_token):
   source_line_number = int(lines.attrib['number'])-1
   souce_line = source_file_token[source_line_number]
-  is_static_or_decorate_method = lambda: "@" in souce_line
+  is_static_or_decorate_method = lambda: "@" in souce_line and ".route" not in souce_line
+  is_return_method = lambda: "return" in souce_line or "def" not in souce_line
   while is_static_or_decorate_method():
     source_line_number +=1
+    souce_line = source_file_token[source_line_number]
+  while is_return_method():
+    source_line_number -=1
     souce_line = source_file_token[source_line_number]
   is_method_line = "def" in souce_line
   if is_method_line:
@@ -119,6 +161,7 @@ def __get_impact_method_name(lines, source_file_token):
 
 if __name__ == "__main__":
   file_path = sys.argv[1] if len(sys.argv) > 1 else None
+  test_case_file_name = sys.argv[2]
   if not file_path:
     raise Exception('Missing cov file for analyze impact test')
   is_directory_path = file_path and os.path.isdir(file_path)
@@ -130,14 +173,15 @@ if __name__ == "__main__":
         file_extension = file.split('.')[1]
         if "xml" == file_extension:
           file_mapping_name = f'{file.split(".")[0]}.json'
-          impact_test = get_impact_test(os.path.join(root,file))
+          impact_test = get_impact_test(os.path.join(root,file), test_case_file_name)
           with open(os.path.join(mapping_impact_folder, file_mapping_name),"w") as impact_file:
             impact_file.write(json.dumps(impact_test))
   else:
     mapping_impact_folder = os.path.join(os.path.dirname(file_path),"impact-mapping")
     file_mapping_name = f'{(os.path.basename(file_path)).split(".")[0]}.json'
     not os.path.exists(mapping_impact_folder) and os.makedirs(mapping_impact_folder)
-    impact_test = get_impact_test(file_path)
+    impact_test = get_impact_test(file_path, test_case_file_name)
     with open(os.path.join(mapping_impact_folder, file_mapping_name),"w") as impact_file:
       impact_file.write(json.dumps(impact_test))
+  __merge_test_impact_files(mapping_impact_folder)
   print('Done generate test impact mapping...')
